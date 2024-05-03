@@ -1,0 +1,67 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:visited {
+  font-style: italic;
+  color: inherit;
+}
+
+ul {
+  color: inherit;
+  list-style: none;
+}
+
+h1,
+h2 {
+  color: $dark-color;
+  font-family: $heading-font;
+  line-height: 90px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 5.5rem;
+}
+
+@media screen and (max-width: 1350px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 736px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 60px;
+  }
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+.main-container {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  font-family: $text-font;
+  color: $light-color;
+}
+@media screen and (max-width: 1350px) {
+  .main-container {
+    width: 90%;
+  }
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}

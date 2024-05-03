@@ -1,0 +1,30 @@
+@import "../styles/variables.scss";
+.header {
+  width: 75%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+
+  .name {
+    color: $dark-color;
+    font-size: $medium;
+    font-weight: bold;
+
+    span {
+      font-size: $x-large;
+      color: $primary-color;
+    }
+  }
+}
+@media screen and (max-width: 1350px) {
+  .header {
+    right: 0;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

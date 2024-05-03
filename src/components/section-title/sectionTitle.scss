@@ -1,0 +1,9 @@
+@import "../../styles/variables.scss";
+
+.sectionTitle {
+  margin-bottom: 30px;
+  span {
+    font-size: 4rem;
+    color: $primary-color;
+  }
+}

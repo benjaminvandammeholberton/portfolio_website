@@ -1,0 +1,78 @@
+@import "../styles/variables.scss";
+
+.project {
+  .container {
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+
+    .card-container {
+      cursor: pointer;
+      width: 350px;
+      height: 250px;
+      &.active {
+        .card {
+          transform: rotateY(180deg);
+        }
+      }
+      .card {
+        position: relative;
+        transition: transform 1200ms;
+        transform-style: preserve-3d;
+        width: 100%;
+        height: 100%;
+
+        .back,
+        .front {
+          position: absolute;
+          backface-visibility: hidden;
+          width: 100%;
+          height: 100%;
+        }
+
+        .front {
+          img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: 20px;
+          }
+        }
+        .back {
+          display: flex;
+          border-radius: 20px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          transform: rotateY(180deg);
+          background-color: $x-light-color;
+
+          .github-link {
+            display: flex;
+            gap: 5px;
+
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .text-content {
+    padding: 20px;
+    .title {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      text-decoration: none;
+    }
+  }
+}

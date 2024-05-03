@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.button {
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 40px;
+  border-radius: 10px;
+  font-family: $text-font;
+  font-size: $medium;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark {
+  background-color: $dark-color;
+  color: $x-light-color;
+
+  &:hover {
+    background-color: rgb(86, 86, 86);
+  }
+}
+
+.light {
+  background-color: $x-light-color;
+
+  &:hover {
+    background-color: rgb(222, 220, 220);
+  }
+}

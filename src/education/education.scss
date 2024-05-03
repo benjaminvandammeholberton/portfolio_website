@@ -1,0 +1,52 @@
+@import "../styles/variables.scss";
+
+.education {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    border-left: 1px black solid;
+
+    .item {
+      padding-left: 15%;
+      position: relative;
+
+      span {
+        font-weight: bold;
+      }
+
+      .dot {
+        position: absolute;
+        left: -8px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 15px;
+        height: 15px;
+        content: "";
+        background-color: $primary-color;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .education {
+    .container {
+      flex-direction: row;
+      border-left: none;
+      border-bottom: 1px black solid;
+      .item {
+        padding-left: 0px;
+        padding-bottom: 50px;
+        text-align: center;
+        .dot {
+          left: 50%;
+          top: auto;
+          bottom: -8px;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
