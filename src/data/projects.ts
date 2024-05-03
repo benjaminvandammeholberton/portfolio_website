@@ -48,7 +48,7 @@ export const projects = [
     image: "/assets/projects/images/netflix.jpg",
     technologies: ["NextJs", "Prisma", "TailwindCSS"],
     link: [""],
-    gitHub: "",
+    gitHub: "https://github.com/benjaminvandammeholberton/netflix_clone",
   },
   {
     id: 4,
