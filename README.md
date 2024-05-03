@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This is my portfolio website created with TypeScript, React, and SCSS. It showcases projects, skills, and provides contact information.
+This is my portfolio website created with TypeScript, React, SCSS and Vite. It showcases projects, skills, and provides contact information.
 
 ## Features
 
@@ -12,8 +12,8 @@ This is my portfolio website created with TypeScript, React, and SCSS. It showca
 ## Installation and Usage
 
 - Clone the repository.
-- Install dependencies: `npm install`.
-- Start the development server: `npm start`.
+- Install dependencies: `yarn install`.
+- Start the development server: `yarn dev`.
 - Open `http://localhost:3000` to view the website.
 
 ## Technologies Used
